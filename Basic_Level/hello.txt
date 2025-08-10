@@ -1,0 +1,35 @@
+		4. What is a Python dictionary? How is it different from a list?
+		A Python dictionary is a built-in data structure that stores data in key-value pairs. It is unordered (in versions <3.7) and mutable, making it ideal for fast lookups, data mappings, and associative arrays.
+		✅ Syntax:
+		
+		my_dict = {'name': 'Avinash', 'age': 30}
+		✅ Key Features:
+			• Keys are unique and immutable (str, int, tuple).
+			• Values can be of any data type.
+			• Fast O(1) average time complexity for lookups, insertions, and deletions.
+		
+		✅ Differences Between Dictionary and List:
+		Feature	Dictionary	List
+		Structure	Key-value pairs	Ordered elements indexed by position
+		Access	Via keys (dict['name'])	Via index (list[0])
+		Use Case	Fast lookup, mapping, configuration data	Sequential data, iteration
+		Key/Index Type	Custom keys (must be immutable)	Integer indices only
+		Duplication	Keys must be unique	Values can be duplicate
+		Performance	Faster for lookups	Slower for lookups in large data sets
+		
+		
+		🎯 Example:
+		
+		python
+		CopyEdit
+		# Dictionary
+student = {'name': 'Avinash', 'marks': 90}
+print(student['name'])  # Output: Avinash
+		# List
+student_list = ['Avinash', 90]
+print(student_list[0])  # Output: Avinash
+		
+		💡 Pro Tip for Interviews:
+		When asked this question, also mention that:
+			“I choose dictionaries when I need to associate unique keys with values for faster access, whereas I use lists when order and position are more important.”
+		
